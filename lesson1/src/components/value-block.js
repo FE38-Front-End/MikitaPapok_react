@@ -1,8 +1,8 @@
 import React from 'react'
 
-function ValueBlock(){
+function ValueBlock(props){
     return <div className="count-block-value">
-        <p >0</p>
+        <p >{props.count}</p>
         </div>
 
 }

@@ -1,11 +1,10 @@
 import React from 'react'
 import {render} from 'react-dom'
 import './style.scss'
-import CountBLock from './components/count-block'
+import FinalBlock from './components/finalBlock'
 
-const lineOne=document.getElementById('line-one');
-const lineTwo=document.getElementById('line-two');
+const lines=document.getElementById('lines');
 
 
-render([<CountBLock/>,<CountBLock/>,<CountBLock/>],lineOne);
-render([<CountBLock/>,<CountBLock/>],lineTwo)
+
+render(<FinalBlock/>,lines);

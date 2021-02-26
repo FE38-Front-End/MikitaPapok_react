@@ -3,12 +3,12 @@ import ButtonPlus from './button-plus'
 import ButtonMinus from './button-minus'
 import ButtonRefresh from './button-refresh'
 
-function ButtonBlock(){
+function ButtonBlock(props){
 return(
     <div className="count-block-buttons">
-        <ButtonPlus></ButtonPlus>
-        <ButtonRefresh></ButtonRefresh>
-        <ButtonMinus></ButtonMinus>
+        <ButtonPlus plusHandler={props.plusHandler} ></ButtonPlus>
+        <ButtonRefresh refreshHandler={props.refreshHandler}></ButtonRefresh>
+        <ButtonMinus minusHandler={props.minusHandler}></ButtonMinus>
 
     </div>
 )
