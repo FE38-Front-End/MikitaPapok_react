@@ -29,9 +29,7 @@ class CountBLock extends Component{
 
         })
     }
-    
-    
-    
+        
     render(){
         return(
         
