@@ -3,8 +3,8 @@ import {render} from 'react-dom'
 import './style.scss'
 import FinalBlock from './components/finalBlock'
 
-const lines=document.getElementById('lines');
+const root=document.getElementById('root');
 
 
 
-render(<FinalBlock/>,lines);
+render(<FinalBlock/>,root);

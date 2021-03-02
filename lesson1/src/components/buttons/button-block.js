@@ -9,7 +9,6 @@ return(
         <ButtonPlus plusHandler={props.plusHandler} ></ButtonPlus>
         <ButtonRefresh refreshHandler={props.refreshHandler}></ButtonRefresh>
         <ButtonMinus minusHandler={props.minusHandler}></ButtonMinus>
-
     </div>
 )
 
