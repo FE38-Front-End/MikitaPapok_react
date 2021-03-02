@@ -9,17 +9,16 @@ class FinalBlock extends Component{
         super(props)
         this.state={byn:'', usd:''}
     }
-    fromBynToUsd(){
-        this.setState((event)=>{
-            return{byn: event.target.value,
+    fromBynToUsd=(event)=>{
+        this.setState(
+            {byn: event.target.value,
                     usd: +event.target.value*0.81}
-        })
+        )
     }
 
-    fromUsdToByn(){
-        this.setState((event)=>{
-            return{byn: +event.target.value*2.61,usd: event.target.value}
-        })
+    fromUsdToByn=(event)=>{
+        this.setState({byn: +event.target.value*2.61,usd: event.target.value}
+        )
     }
 
 
