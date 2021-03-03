@@ -11,9 +11,9 @@ class CountBLock extends Component{
         this.refreshHandler=this.refreshHandler.bind(this)
     }
 
-    refreshHandler(state){
+    refreshHandler(){
         this.setState({
-            count: state.count = 0
+            count: 0
         })
     }
 
