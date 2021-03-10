@@ -1,0 +1,19 @@
+@import './componets/counter/style.scss';
+
+
+.error, .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkblue;
+   &-message{
+        color: red;
+    }
+}
+
+
+.home{
+    
+    background-color: darkcyan;
+    color: white;
+}
