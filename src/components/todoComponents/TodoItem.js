@@ -1,11 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { deleteTodo, updateTodo, toggleTodo } from '../../redux/actions';
-
-
 import {useState} from 'react'
-
-
 
 
 export default function TodoItem({todo}){
@@ -32,11 +28,11 @@ export default function TodoItem({todo}){
         dispath(deleteTodo(todo.id))
     }
     const [type, setType]=useState(false)
-    const toggleClassNames=()=>{ setType(!type)}
-    return(
-            
+    const toggleClassNames=()=>{ console.log(window.localStorage) 
+        return setType(!type)}
+    return(            
             <li className='todo-item'>
-                {edit?<input type='text' value={name} onChange={(event)=>{setName(event.target.value)}}/>
+                {edit?<input type='text' className='edit-input' value={name} onChange={(event)=>{setName(event.target.value)}}/>
                 : <div  onClick={toggleClassNames} className={`todo-item__text ${
                     type ? "todo-item__text--completed" : ""
                   }`}>{todo.name}</div>}
@@ -44,15 +40,7 @@ export default function TodoItem({todo}){
                     <button className='button-edit' onClick={editHandler}>{edit? 'Принять':'Изменить'}</button> 
                     <button className='button-delete' onClick={deleteHandler}>Удалить</button>
                 
-                </div>
-                
-            </li>
-            
-            
-        
-    )
-       
-        
-
-
+                </div>                
+            </li>               
+    )    
 }

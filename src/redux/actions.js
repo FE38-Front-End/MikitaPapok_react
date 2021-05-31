@@ -6,7 +6,7 @@ export const DELETE_INCOMPLETE = 'DELETE_INCOMPLETE'
 export const ADD_COMPLETE= 'ADD_INCOMPLETE'
 export const DELETE_COMPLETE = 'DELETE_INCOMPLETE'
 export const SET_FILTER = "SET_FILTER";
-export const TOGGLE_TODO = "TOGGLE_TODO";
+
 
 export const setFilter = filter => ({ type: SET_FILTER, payload: { filter } });
 
@@ -34,8 +34,3 @@ export  function updateTodo(todo){
         payload: todo
     }
 }
-
-export const toggleTodo = id => ({
-    type: TOGGLE_TODO,
-    payload: { id }
-  });
